@@ -24,7 +24,67 @@
         <h1 style="background-image:url(images/trainer.jpg); padding: 4em 1em; color: white; background-size: cover">Course Registration</h1> 
     </header>
     
-    <!-- insert form here -->
+    <form>
+        <fieldset>
+            <legend> Your details:</legend>
+            
+            <ul>
+            
+                <li>    <label> First name: </label>
+                        
+                        <input type="text" autofocus="true" required/>
+                </li>
+                
+                <li>    <label> Surname: </label>
+                        
+                        <input type="text">
+                </li>
+                
+                <li>
+                    <label> Position/Role: </label>
+                    
+                    <input type="text">
+                </li>
+                <li>
+                    <label> e-mail:</label>
+                    <input type= "email" name="e-mail" id="email" placeholder="you@domain.com" required/>
+                </li>
+                <li>
+                    <label> Tel:</label>
+                    
+                    <input type= "number" name="Phone" id="Phone" placeholder="e.g +4475000000000" required/>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend> Course details:</legend>
+            <ul>
+                <li>
+                    <label>Choose a course:</label>
+                   <select name="Course details">
+                    <option value="JS"> Programming with Javascript </option>
+                    <option value="HTML5"> Developing Web Applications using HTML 5  </option>
+                    <option value="DRW"> Developing Responsive Websites </option>
+                    <option value="JQ"> Leveraging the Power of jQuery </option>
+                   </select>
+                </li>
+                <li>
+                    <label> Number of Delegates:</label>
+                
+                    <input type= "number" name="Number of Delegates" id="Number of Delegates"/>
+                </li>
+                
+                <li>
+                    <label> Date:</label>
+                
+                    <input type= "date" name="date" id="date"/>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <button>Submit</button>
+        </fieldset>
+     </form>
     
 </body>
 </html>
